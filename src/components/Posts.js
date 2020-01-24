@@ -1,6 +1,7 @@
 import React from 'react'
 import { fetchMainPosts } from '../utils/api'
 import Loading from './Loading'
+import { PostsList } from './PostsList'
 
 export default class Posts extends React.Component {
   state = {
@@ -44,6 +45,6 @@ export default class Posts extends React.Component {
 
     if (loading) return <Loading />
 
-    return posts.map(post => <pre>{JSON.stringify(post)}</pre>)
+    return <PostsList posts={posts} />
   }
 }
