@@ -2,14 +2,18 @@ import React from 'react'
 import './App.css'
 import Posts from './components/Posts'
 import Nav from './components/Nav'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="container">
-      <Nav />
+    <Router>
+      <div className="container">
+        <Nav />
 
-      <Posts />
-    </div>
+        <Route exact path="/" render={() => <Posts type="top" />} />
+        <Route path="/new" render={() => <Posts type="new" />} />
+      </div>
+    </Router>
   )
 }
 

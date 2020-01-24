@@ -1,18 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { fetchMainPosts } from '../utils/api'
 import Loading from './Loading'
 import { PostsList } from './PostsList'
 
 export default class Posts extends React.Component {
   state = {
-    type: 'top',
     posts: null,
     error: null,
     loading: true,
   }
 
   componentDidMount() {
-    this.updatePosts(this.state.type)
+    this.updatePosts(this.props.type)
   }
 
   updatePosts = type => {
@@ -41,10 +41,16 @@ export default class Posts extends React.Component {
   }
 
   render() {
-    const { posts, loading } = this.state
+    const { posts, error, loading } = this.state
 
     if (loading) return <Loading />
 
+    if (error) return <p className="center-text error">{error}</p>
+
     return <PostsList posts={posts} />
   }
+}
+
+Posts.propTypes = {
+  type: PropTypes.oneOf(['top', 'new']),
 }
