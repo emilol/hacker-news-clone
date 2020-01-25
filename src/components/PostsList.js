@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import PostMetaInfo from './PostMetaInfo'
 
 export function PostsList({ posts }) {
   return (
@@ -12,9 +13,7 @@ export function PostsList({ posts }) {
             <a className="link" href={url}>
               {title}
             </a>
-            <div className="meta-info-light">
-              by {by} on {new Date(time).toLocaleString()} with {descendants} comments
-            </div>
+            <PostMetaInfo by={by} time={time} descendants={descendants} />
           </li>
         )
       })}
