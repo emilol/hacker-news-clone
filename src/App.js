@@ -4,6 +4,7 @@ import { ThemeProvider } from './contexts/theme'
 import Posts from './components/Posts'
 import Nav from './components/Nav'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import User from './components/User'
 
 export default class App extends React.Component {
   state = {
@@ -25,6 +26,7 @@ export default class App extends React.Component {
 
               <Route exact path="/" render={() => <Posts type="top" />} />
               <Route path="/new" render={() => <Posts type="new" />} />
+              <Route path="/user" component={User} />
             </div>
           </div>
         </ThemeProvider>
