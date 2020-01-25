@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ThemeConsumer } from '../contexts/theme'
 import { formatDate } from '../utils/helpers'
+import MetaInfo from './MetaInfo'
 
 export default function UserMetaInfo({ created, karma }) {
   return (
-    <ThemeConsumer>
-      {({ theme }) => (
-        <div className={`meta-info-${theme}`}>
-          joined <b>{formatDate(created)}</b> has <b>{karma.toLocaleString()}</b> karma
-        </div>
-      )}
-    </ThemeConsumer>
+    <MetaInfo>
+      <span>
+        joined <b>{formatDate(created)}</b>
+      </span>
+      <span>
+        has <b>{karma.toLocaleString()}</b> karma
+      </span>
+    </MetaInfo>
   )
 }
 

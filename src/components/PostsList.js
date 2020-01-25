@@ -6,14 +6,14 @@ export function PostsList({ posts }) {
   return (
     <ul>
       {posts.map(post => {
-        const { title, url, by, time, descendants } = post
+        const { id, title, url, by, time, descendants } = post
 
         return (
           <li key={post.id} className="post">
             <a className="link" href={url}>
               {title}
             </a>
-            <PostMetaInfo by={by} time={time} descendants={descendants} />
+            <PostMetaInfo id={id} by={by} time={time} descendants={descendants} />
           </li>
         )
       })}
