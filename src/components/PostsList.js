@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PostMetaInfo from './PostMetaInfo'
+import Byline from './Byline'
 
 export function PostsList({ posts }) {
   return (
@@ -13,7 +13,7 @@ export function PostsList({ posts }) {
             <a className="link" href={url}>
               {title}
             </a>
-            <PostMetaInfo id={id} by={by} time={time} descendants={descendants} />
+            <Byline by={by} time={time} id={id} comments={descendants} />
           </li>
         )
       })}

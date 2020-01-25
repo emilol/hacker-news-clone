@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import UserMetaInfo from './UserMetaInfo'
+import MetaInfo from './MetaInfo'
+import { formatDate } from '../utils/helpers'
 
 export function UserSummary({ user }) {
   const { id, created, karma, about } = user
@@ -8,7 +9,14 @@ export function UserSummary({ user }) {
   return (
     <React.Fragment>
       <h1 className="header">{id}</h1>
-      <UserMetaInfo created={created} karma={karma} />
+      <MetaInfo>
+        <span>
+          joined <b>{formatDate(created)}</b>
+        </span>
+        <span>
+          has <b>{karma.toLocaleString()}</b> karma
+        </span>
+      </MetaInfo>
       <p dangerouslySetInnerHTML={{ __html: about }} />
     </React.Fragment>
   )
