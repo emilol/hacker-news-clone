@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css'
 import { ThemeProvider } from './contexts/theme'
-import Posts from './components/Posts'
-import Nav from './components/Nav'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Posts from './components/Posts'
+import Post from './components/Post'
+import Nav from './components/Nav'
 import User from './components/User'
 
 export default class App extends React.Component {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
               <Route exact path="/" render={() => <Posts type="top" />} />
               <Route path="/new" render={() => <Posts type="new" />} />
               <Route path="/user" component={User} />
+              <Route path="/post" component={Post} />
             </div>
           </div>
         </ThemeProvider>

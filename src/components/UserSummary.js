@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import UserMetaInfo from './UserMetaInfo'
 
 export function UserSummary({ user }) {
+  const { id, created, karma, about } = user
+
   return (
     <React.Fragment>
-      <h1 className="header">{user.id}</h1>
-      <UserMetaInfo created={user.created} karma={user.karma} />
-      <p>{user.about}</p>
+      <h1 className="header">{id}</h1>
+      <UserMetaInfo created={created} karma={karma} />
+      <p dangerouslySetInnerHTML={{ __html: about }} />
     </React.Fragment>
   )
 }

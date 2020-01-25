@@ -8,6 +8,7 @@ import { PostsList } from './PostsList'
 export default class User extends React.Component {
   state = {
     user: null,
+    posts: null,
     error: null,
     loadingUser: true,
     loadingPosts: false,
@@ -36,7 +37,7 @@ export default class User extends React.Component {
         }),
       )
       .catch(error => {
-        console.warn('Error fetching posts:', error)
+        console.warn('Error fetching user details:', error)
 
         this.setState({
           error: `There was an error fetching user details`,
@@ -53,10 +54,10 @@ export default class User extends React.Component {
       <React.Fragment>
         {error && <p className="center-text error">{error}</p>}
 
-        {loadingUser && <Loading text="Loading User" />}
+        {loadingUser && <Loading text="Fetching User" />}
         {user && <UserSummary user={user} />}
 
-        {loadingPosts && <Loading text="Loading Posts" />}
+        {loadingPosts && <Loading text="Fetching Posts" />}
         {posts && (
           <React.Fragment>
             <h2>Posts</h2>
