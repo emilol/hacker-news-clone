@@ -1,68 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <a href="https://tylermcginnis.com"><img src="https://tylermcginnis.com/tylermcginnis_glasses-300.png" alt="TylerMcGinnis.com Logo" width="300"></a>
+  <br>
+</h1>
 
-## Available Scripts
+<h3 align="center">React Course Curriculum - <a href="https://tm.dev/react-course-curriculum/">Hacker News Clone</a></h3>
 
-In the project directory, you can run:
+### Info
 
-### `yarn start`
+This is the repository for TylerMcGinnis.com's "React" course curriculum project.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For more information on the course, visit __[tm.dev/courses/react](https://tm.dev/courses/react/)__.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Project
 
-### `yarn test`
+This is a (soft) "Hacker News" clone. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can view the final project at __[tm.dev/react-course-curriculum](https://tm.dev/react-course-curriculum/)__
 
-### `yarn build`
+### Project Preview
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Light Mode          |  Dark Mode
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/2933430/55523754-c1775200-5647-11e9-9394-387cd49a012c.png) ![](https://user-images.githubusercontent.com/2933430/55523752-c0debb80-5647-11e9-91e0-cd2dd38b3255.png) ![](https://user-images.githubusercontent.com/2933430/55523749-c0debb80-5647-11e9-9575-80262d951938.png) |  ![](https://user-images.githubusercontent.com/2933430/55523751-c0debb80-5647-11e9-865e-fc829b2566f8.png) ![](https://user-images.githubusercontent.com/2933430/55523753-c1775200-5647-11e9-8230-db5ea02e7333.png) ![](https://user-images.githubusercontent.com/2933430/55523750-c0debb80-5647-11e9-835b-79530775d1b9.png)
