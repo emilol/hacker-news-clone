@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { ThemeConsumer } from '../contexts/theme'
 
 export default function MetaInfo({ children }) {
